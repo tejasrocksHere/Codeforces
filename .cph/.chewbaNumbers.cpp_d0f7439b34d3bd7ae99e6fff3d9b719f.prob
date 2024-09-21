@@ -1,0 +1,1 @@
+{"name":"Local: chewbaNumbers","url":"k:\\Codeforces\\chewbaNumbers.cpp","tests":[{"id":1726811492783,"input":"27","output":"22"},{"id":1726811520135,"input":"4545","output":"4444"},{"id":1726811637119,"input":"921","output":"921"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"k:\\Codeforces\\chewbaNumbers.cpp","group":"local","local":true}
