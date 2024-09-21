@@ -1,4 +1,5 @@
-Tejas's Codeforces Solutions  ❄️
+# Tejas's Codeforces Solutions  ❄️
+
 Hey there! 👋 This repo is where I keep my Codeforces problem solutions from the September. It's mainly for me to track my progress and keep things organized, but you're welcome to take a look if you're curious or working on similar problems!
 
 📚 Overview
