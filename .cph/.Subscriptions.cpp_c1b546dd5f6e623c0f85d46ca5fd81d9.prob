@@ -1,0 +1,1 @@
+{"name":"Local: Subscriptions","url":"k:\\Codeforces\\Subscriptions.cpp","tests":[{"id":1727269975519,"input":"3\n1 100\n12 250\n13 135","output":"100\n500\n405"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"k:\\Codeforces\\Subscriptions.cpp","group":"local","local":true}

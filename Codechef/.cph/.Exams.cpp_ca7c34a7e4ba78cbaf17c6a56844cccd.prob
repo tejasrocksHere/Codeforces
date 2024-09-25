@@ -1,0 +1,1 @@
+{"name":"Local: Exams","url":"k:\\Codeforces\\Codechef\\Exams.cpp","tests":[{"id":1727270445226,"input":"4\n2 10 12\n2 10 3\n1 5 3\n3 6 9","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"k:\\Codeforces\\Codechef\\Exams.cpp","group":"local","local":true}
