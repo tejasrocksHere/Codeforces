@@ -6,5 +6,9 @@
   od foundation
 
   [Detailed Solution](https://leetcode.com/problems/count-vowel-substrings-of-a-string/solutions/1572798/c-o-n-2-to-o-n-detailed-explanation-with-picture)
-  
+
   ![alt text]({DE63E4E5-3CBE-4FAA-A6B7-BCA27E5C24C5}.png)
+
+
+
+now moving on to the 3rd question
