@@ -20,4 +20,33 @@ initaly left_sum=sum of first k elements
 [1358. Number of Substrings Containing All
 Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
 - For every character there is substring that ends      
-![alt text]({D6688A71-080E-47CB-ACBC-873CAC7B3A88}.png) 
+- By using this logic we can find number of strings
+![alt text]({D6688A71-080E-47CB-ACBC-873CAC7B3A88}.png)
+
+
+## Solution
+```
+class Solution {
+public:
+    int numberOfSubstrings(string s) {
+    int a=-1;
+    int b=-1;
+    int c=-1;
+    int cnt=0;
+    
+        for(int i=0;i<s.size();i++){
+            if(s[i]=='a')
+            a=i;
+            if(s[i]=='b')
+            b=i;
+            if(s[i]=='c')
+            c=i;
+            int minIndex=min({a,b,c});
+
+            if(minIndex!=-1)
+            cnt+=minIndex+1;
+    }
+    return cnt;
+    }
+};
+```
