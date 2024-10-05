@@ -7,37 +7,56 @@ using namespace std;
 const int INF = 1e18;
 const int MOD = 1e9 + 7;
 
-
 void solve() {
-    // Write your solution here
     int n, k;
     cin >> n >> k;
-    int sum = 1;
-    int number_closed_k=-10;
+    vector<int> arr(n);
+    
     for (int i = 0; i < n; i++) {
-        int t;
-        cin>>t;
-     (t<=k)
-     {
-
-     }
-     
+        cin >> arr[i];
     }
-    cout<<number_closed_k<<endl;
 
-  
+    int change = k - 1;
+    int e_count = 0; // Count of even numbers
+    bool divisible = false;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0)
+            e_count++;
+
+        if (arr[i] % k == 0) {
+            divisible = true;
+        } else {
+            change = min(change, k - arr[i] % k);
+        }
+    }
+
+    // If there's any element divisible by k, no changes needed
+    if (divisible) {
+        cout << 0 << endl;
+        return;
+    }
+
+    if (k != 4) {
+        // For k other than 4, just print the minimum change required
+        cout << change << endl;
+    } else {
+        // Special case for k = 4
+        if (e_count >= 2) {
+            cout << 0 << endl;
+        } else if (e_count == 1) {
+            cout << min(1LL, change) << endl;
+        } else {
+            cout << min(2LL, change) << endl;
+        }
+    }
 }
 
 signed main() {
-    // Uncomment these lines if you want to read from files
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
-
     int t;
-    cin >> t; // Read the number of test cases
+    cin >> t;
     while (t--) {
         solve();
     }
-
     return 0;
 }
